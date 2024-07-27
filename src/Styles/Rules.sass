@@ -1,16 +1,67 @@
+$background-image: '../assets/bg_02.svg'
+$font-primary: 'Pari-Match Regular', sans-serif
+$font-secondary: 'TT Firs Neue', sans-serif
+$primary-color: #F8FF13
+$secondary-color: #FFFFFF
+$font-size-large: 40px
+$font-size-medium: 18px
+$line-height-large: 40px
+$line-height-medium: 120%
+$letter-spacing: -0.02em
+
 .rules
-    background: url('../assets/bg_02.svg') no-repeat
-    background-size: cover
-    text-align: center
-    height: 835px
+  background: url($background-image) no-repeat center center / cover
+  text-align: center
+  height: 835px
 
 .text-container
-    display: flex
-    justify-content: center 
-    align-items: center
-    padding: 30px
-    font-weight: 300
-    font-size: 40px
-    line-height: 40px
-    margin:0 20px 
-    color: #F8FF13
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: 160px
+  padding: 20px 0
+  margin: 0 20px
+  font-family: $font-primary
+  font-weight: 300
+  font-size: $font-size-large
+  line-height: $line-height-large
+  color: $primary-color
+
+.container_rules
+  padding: 30px 0
+
+.container
+  display: flex
+  justify-content: center
+  align-items: center
+
+.number_rules, .p_txt, .span_txt
+  font-family: $font-primary
+  letter-spacing: $letter-spacing
+  leading-trim: both
+  text-edge: cap
+
+.number_rules
+  text-transform: uppercase
+  color: $primary-color
+  padding: 20px
+
+.p_txt
+  font-weight: 400
+  font-size: $font-size-medium
+  line-height: $line-height-medium
+  color: $secondary-color
+  min-width: 160px
+
+.span_txt
+  font-weight: 500
+  font-size: $font-size-medium
+  line-height: $line-height-medium
+  color: $primary-color
+
+.text_rules
+  display: flex
+  text-align: left
+
+.button_action
+  margin-top: 40px

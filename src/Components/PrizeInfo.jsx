@@ -1,6 +1,8 @@
 import React from 'react';
 import '../Styles/PrizeInfo.sass';
 import play_now from '../assets/button_play_now.svg'
+import '../Styles/index.sass'
+
 
 const PrizeInfo = () => {
   return (
@@ -15,6 +17,8 @@ const PrizeInfo = () => {
             <span className='and-guaranteed'>guaranteed</span>
         <div className='play_now'><img src={play_now} alt="" /></div>
         <span className='terms'>Terms and conditions</span>
+
+
     </div>
   );
 };

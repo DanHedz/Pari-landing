@@ -1,0 +1,104 @@
+// Variables
+$font-primary: 'Pari-Match Regular', sans-serif
+$font-secondary: 'TT Firs Neue', sans-serif
+$bg-color: #261D59
+$primary-color: #F8FF13
+$text-color: #FFFFFF
+$secondary-text-color: #F2F2F2
+$border-radius: 6px
+$container-max-width: 320px
+$font-size-base: 16px
+
+// Mixins
+=flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+=text-styles($font, $weight, $size, $color, $transform: none)
+  font-family: $font
+  font-weight: $weight
+  font-size: $size
+  color: $color
+  text-transform: $transform
+
+
+.faq
+  background: url('../assets/bg_05.png') no-repeat center center / cover
+  background-position: center
+  box-sizing: border-box
+  text-align: center
+  height: 835px
+  width: 100%
+  background-color: #0E0447
+
+  font-family: $font-primary
+
+
+.faq-questiones
+  padding: 20px
+
+  h1
+    +text-styles($font-primary, 600, 34px, $primary-color, uppercase)
+    font-style: italic
+    line-height: 41px
+    letter-spacing: -0.02em
+    margin: 8px 0
+
+  p
+    +text-styles($font-secondary, 700, 20px, $text-color, uppercase)
+    line-height: 22px
+    margin: 0
+
+
+.questiones
+  +flex-center
+  width: 300px
+  flex-direction: column
+  max-width: $container-max-width
+  margin: 8px auto
+  border-radius: $border-radius
+  background-color: $bg-color
+  border: 1px solid $primary-color
+  padding: 10px 8px
+
+
+  .question
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    cursor: pointer
+    text-align: left
+
+
+    p
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      margin: 0
+      +text-styles($font-secondary, 800, 20px, $primary-color, uppercase)
+
+      span
+        padding: 2px 6px
+        font-family: $font-secondary
+        font-weight: 600
+        font-size: 14px
+        color: $secondary-text-color
+
+      img
+        width: 24px
+        height: auto
+
+  .answer p
+    margin-top: 10px
+    font-family: $font-secondary
+    font-weight: 400
+    font-size: 10px
+    color: $secondary-text-color
+    text-align: left
+    p
+      text-align: left
+      letter-spacing: -0.02em
+      margin: 0

@@ -2,6 +2,8 @@ import React from 'react';
 import '../Styles/Banner.sass';
 import PrizeInfo from './PrizeInfo';
 import logoPari from '../assets/logo_pari.svg';
+import '../Styles/index.sass'
+
 
 
 const Banner = () => {
@@ -11,6 +13,7 @@ const Banner = () => {
       <img src={logoPari} alt="Parimatch" className="banner__logo" />
       </div>
       <PrizeInfo />
+
     </div>
   )
 }

@@ -1,94 +1,82 @@
+$font-primary: 'Pari-Match Regular', sans-serif
+$font-secondary: 'TT Firs Neue', sans-serif
+
+$font-color-black: #000000
+$font-color-green: #008A0E
+$font-color-white: #FFFFFF
+$font-color-orange: #FF682F
+$font-style-italic: italic
+$font-weight-regular: 400
+$text-transform-uppercase: uppercase
+$leading-trim-both: both
+$text-edge-cap: cap
+
 .prize-info
-    width: 100%
-    max-height: 44vh
+  font-family: $font-primary
+  margin: auto
+  max-width: 320px
 
+.win, .new3-8, .from-kajal, .nicolas-pooran, .and-guaranteed
+  font-style: $font-style-italic
+  font-weight: $font-weight-regular
+  text-transform: $text-transform-uppercase
+  leading-trim: $leading-trim-both
+  text-edge: $text-edge-cap
 
-.win 
-    display: inline-block 
-    font-style: italic
-    font-weight: 400
-    font-size: 40px
-    line-height: 40px
-    margin:0px 12px
-    leading-trim: both
-    text-edge: cap
-    text-transform: uppercase
-    color: #000000
- 
-    
+.win
+  display: inline-block
+  font-size: 40px
+  line-height: 40px
+  margin: 0px 12px
+  color: $font-color-black
+
 .new3-8
   position: relative
   display: inline-block
-  font-style: italic
-  font-weight: 400
   font-size: 66px
-  text-transform: uppercase
-  color: #008A0E 
+  color: $font-color-green
   z-index: 0
   -webkit-text-stroke-width: 2px
-  -webkit-text-stroke-color: #FFFFFF
+  -webkit-text-stroke-color: $font-color-white
 
   &::before
-    content: attr(data-text) 
+    content: attr(data-text)
     position: absolute
     width: 100%
     height: 100%
-    font-style: italic
-    font-weight: 400
     font-size: 66px
-    text-transform: uppercase
     color: transparent
-    z-index: -1 
+    z-index: -1
     display: block
     -webkit-text-stroke-width: 10px
-    -webkit-text-stroke-color: #FF682F
+    -webkit-text-stroke-color: $font-color-orange
 
-.from-kajal
-    margin-top:4px
-    display: block
-    font-style: italic
-    font-weight: 400
-    font-size: 20px
-    line-height: 20px
-    leading-trim: both
-    text-edge: cap
-    text-transform: uppercase
-    color: #000000
+.from-kajal, .nicolas-pooran
+  display: block
+  font-size: 24px
+  line-height: 24px
+  color: $font-color-black
 
 .nicolas-pooran
-    margin-left: 20%
-    display: block
-    font-style: italic
-    font-weight: 400
-    font-size: 20px
-    line-height: 20px
-    leading-trim: both
-    text-edge: cap
-    text-transform: uppercase
-    color: #000000
+  margin-left: 20%
 
 .and-guaranteed
-    display: inline-block
-    font-style: italic
-    font-weight: 400
-    font-size: 38.0845px
-    margin:0 12px
-    line-height: 37px
-    leading-trim: both
-    text-edge: cap
-    text-transform: uppercase
-    color: #000000
+  display: inline-block
+  font-size: 36px
+  line-height: 36px
+  margin: 0 12px
+  color: $font-color-black
 
 .play_now
-    margin-top: 12px
+  margin-top: 8px
 
 .terms
-
-    font-style: normal
-    font-weight: 600
-    font-size: 10px
-    line-height: 100%
-    text-align: center
-    text-transform: uppercase
-    color: #000000
+  font-family: $font-secondary
+  font-style: normal
+  font-weight: 600
+  font-size: 10px
+  line-height: 100%
+  text-align: center
+  text-transform: $text-transform-uppercase
+  color: $font-color-black
 

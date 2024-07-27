@@ -1,0 +1,165 @@
+// Variables
+$font-color-white: #FFFFFF
+$font-color-orange: #FF682F
+$font-color-black: #000000
+$font-color-green: #008A0E
+
+.leaderboard_container
+    max-width: 400px
+    margin: auto
+
+.leaderboard
+    background: url('../assets/bg_04.svg') no-repeat center center / cover
+    box-sizing: border-box
+    text-align: center
+    height: 835px
+    width: 100%
+    font-family: 'Pari-Match Regular', sans-serif
+
+.new3-8
+    position: relative
+    display: inline-block
+    font-size: 66px
+    color: $font-color-green
+    z-index: 0
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: $font-color-white
+
+    &::before
+        content: attr(data-text)
+        position: absolute
+        width: 100%
+        height: 100%
+        font-size: 66px
+        color: transparent
+        z-index: -1
+        display: block
+        -webkit-text-stroke-width: 10px
+        -webkit-text-stroke-color: $font-color-orange
+
+.world-cup
+    padding-top: 20px
+    margin: 0
+
+.more-prize
+    font-family: 'TT-Firs Neue', sans-serif
+    display: inline-block
+    background-color: $font-color-white
+    margin: 12px 20px 0 10px
+    padding: 4px 16px
+    line-height: 24px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    color: $font-color-black
+
+.arrow
+    font-size: 24px
+
+.btn-container
+    padding: 8px 0
+
+.disabled_btn, .active_btn
+    font-family: 'TT-Firs Neue', sans-serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 100%
+    letter-spacing: -0.02em
+    width: 100px
+    height: 44px
+    cursor: pointer
+    box-sizing: border-box
+    border-radius: 10px
+    margin: 5px
+
+.disabled_btn
+    color: $font-color-white
+    background: #261D59
+    border: 2px solid $font-color-orange
+
+.active_btn
+    color: $font-color-black
+    background: $font-color-white
+    border: 2px solid $font-color-orange
+
+.moto_winner_container
+    height: 30px
+    background: #0E0447
+    border-radius: 10px
+    width: 300px
+    display: flex
+    margin: 10px auto
+    flex-direction: column
+    align-items: center
+    padding: 10px 0
+
+.moto_winner_container p
+    font-family: 'TT-Firs Neue', sans-serif
+    font-weight: 600
+    font-size: 16px
+    margin: 6px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #F8FF13
+
+.moto_winner_container span
+    font-family: 'TT-Firs Neue', sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #F2F2F2
+    padding: 0 16px
+    border-bottom: 1px solid #F2F2F2
+
+.table_container
+    padding: 10px
+    height: 300px
+    background: #0E0447
+    border-radius: 10px
+    width: 300px
+    display: flex
+    margin: 20px auto
+    flex-direction: column
+    align-items: center
+    ::-webkit-scrollbar
+        width: 8px
+    ::-webkit-scrollbar-track
+        background: #6c6832
+        border-radius: 20px
+        margin: 5px 0
+    ::-webkit-scrollbar-thumb
+        background-color: #F8FF13
+        border-radius: 20px
+        border: 2px solid #0E0447
+
+.winner_container
+    overflow-y: auto
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+
+.winner
+    font-family: 'TT-Firs Neue', sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 120%
+    text-align: center
+    letter-spacing: -0.02em
+    color: #F2F2F2
+    height: 52px
+    width: 272px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #F2F2F2
+
+.winner p
+    margin: 6px 0px
+
+.winner span
+    margin: 0 32px
