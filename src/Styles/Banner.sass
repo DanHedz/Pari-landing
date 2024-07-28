@@ -1,8 +1,8 @@
-
+$layout-breakpoint-big: 1080px
 $primary-color: #F8FF13
   
 .banner
-  background: url('../assets/bg.png') no-repeat center center / cover
+  background: url('../assets/bg.svg') no-repeat center center / cover
   background-color: $primary-color
   box-sizing: border-box
   text-align: center
@@ -18,3 +18,17 @@ $primary-color: #F8FF13
   &__event-logo
     padding:10px
     height: 60px
+
+@media (min-width: $layout-breakpoint-big)
+  .banner 
+    background: url('../assets/bg_desktop.svg') no-repeat center center / cover
+    box-sizing: border-box
+    text-align: center
+    height:1080px
+    &__header
+        display: flex
+        justify-content: left
+        align-items: left
+        img
+          height:94px
+          margin: 40px 0 5px 180px 

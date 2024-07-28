@@ -1,4 +1,5 @@
 $font-secondary: 'TT Firs Neue', sans-serif
+$layout-breakpoint-big: 1080px
 
 .footer
   font-family: $font-secondary
@@ -78,3 +79,9 @@ $font-secondary: 'TT Firs Neue', sans-serif
     span 
         text-transform: uppercase
         margin: 0 4px 0 12px
+
+@media (min-width: $layout-breakpoint-big)
+  .footer__payment-options img 
+    height: 30px
+    margin: 0 20px 0 20px
+    

@@ -8,7 +8,7 @@ $secondary-text-color: #F2F2F2
 $border-radius: 6px
 $container-max-width: 320px
 $font-size-base: 16px
-
+$layout-breakpoint-big: 1024px
 // Mixins
 =flex-center
   display: flex
@@ -24,7 +24,7 @@ $font-size-base: 16px
 
 
 .faq
-  background: url('../assets/bg_05.png') no-repeat center center / cover
+  background: url('../assets/bg_05.svg') no-repeat center center / cover
   background-position: center
   box-sizing: border-box
   text-align: center
@@ -60,7 +60,7 @@ $font-size-base: 16px
   border-radius: $border-radius
   background-color: $bg-color
   border: 1px solid $primary-color
-  padding: 10px 8px
+  padding: 20px 30px
 
 
   .question
@@ -75,7 +75,7 @@ $font-size-base: 16px
     p
       display: flex
       justify-content: space-between
-      align-items: center
+      align-items: stretch
       width: 100%
       margin: 0
       +text-styles($font-secondary, 800, 20px, $primary-color, uppercase)
@@ -102,3 +102,42 @@ $font-size-base: 16px
       text-align: left
       letter-spacing: -0.02em
       margin: 0
+
+
+@media (min-width: $layout-breakpoint-big)
+  .faq
+    background: url('../assets/bg_desktop_05.svg') no-repeat center center / cover
+  
+  .faq-questiones
+    padding: 20px
+
+    h1
+      font-size: 44px
+      font-style: italic
+      line-height: 41px
+      letter-spacing: -0.02em
+      margin: 8px 0
+
+    p
+      line-height: 22px
+      margin: 20px 0
+      br
+        display: none
+
+  .questiones-container
+    max-width: 800px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    margin: auto
+    gap: 5px
+
+  .questiones
+    display: flex
+     flex-basis: 50%
+      box-sizing: border-box
+
+
+
+

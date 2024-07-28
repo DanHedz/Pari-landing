@@ -1,6 +1,6 @@
 $font-primary: 'Pari-Match Regular', sans-serif
 $font-secondary: 'TT Firs Neue', sans-serif
-
+$layout-breakpoint-big: 1024px
 $font-color-black: #000000
 $font-color-green: #008A0E
 $font-color-white: #FFFFFF
@@ -11,6 +11,7 @@ $text-transform-uppercase: uppercase
 $leading-trim-both: both
 $text-edge-cap: cap
 
+  
 .prize-info
   font-family: $font-primary
   margin: auto
@@ -80,3 +81,35 @@ $text-edge-cap: cap
   text-transform: $text-transform-uppercase
   color: $font-color-black
 
+@media (min-width: $layout-breakpoint-big)
+  .prize-info
+    margin:0 0 0 100px
+    max-width: 500px
+
+  .new3-8
+    font-size: 80px !important
+
+
+  .new3-8::before 
+    font-size: 80px !important
+
+  .win
+    margin: 0 20px
+    font-size: 60px
+    line-height: 60px
+
+  .from-kajal, .nicolas-pooran
+    font-size: 44px
+    line-height: 44px
+
+  .and-guaranteed
+    font-size: 56px
+    line-height: 56px
+
+  .play_now img 
+    height: 90px
+    margin-top: 10px
+
+  .terms
+    padding: 4px 8px
+    font-size: 12px

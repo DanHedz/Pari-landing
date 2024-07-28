@@ -15,9 +15,11 @@ const Leaderboard = () => {
       <div className="leaderboard_container">
         <h1 className='world-cup'>The Cricket World Cup <br />Tournament</h1>
         <span className='new3-8' data-text="LEADERBOARD">LEADERBOARD</span> 
-        <div className="more-prize">MORE PRIZE POINTS</div>
-        <span className="arrow"> &gt;&gt;<br /> </span>
-        <div className="more-prize">MORE CHANCES TO WIN BIG!</div>
+        <div className="more_prizes">
+          <div className="more-prize">MORE PRIZE POINTS</div>
+          <span className="arrow"> &gt;&gt;<br /> </span>
+          <div className="more-prize">MORE CHANCES TO WIN BIG!</div>
+        </div>
       </div>
 
       <div className="rounds_container">
@@ -42,49 +44,65 @@ const Leaderboard = () => {
           <p>MOTORCYCLE WINNER  <span>00000</span> </p>
         </div>
         <div className="table_container">
+          <div className="winner_number">
+            <p><span>№</span><span>User ID</span><span >Prize Points</span></p>
+          </div>
           <div className="winner_container">
             <div className="winner">
-              <p>01 <span>0000000000</span><span>00000</span></p>
+              <p><span>01</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>02 <span>0000000000</span><span>00000</span></p>
+              <p><span>02</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>03 <span>0000000000</span><span>00000</span></p>
+              <p><span>03</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>04 <span>0000000000</span><span>00000</span></p>
+              <p><span>04</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>05 <span>0000000000</span><span>00000</span></p>
+              <p><span>05</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>06 <span>0000000000</span><span>00000</span></p>
+              <p><span>06</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>07 <span>0000000000</span><span>00000</span></p>
+              <p><span>07</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>08 <span>0000000000</span><span>00000</span></p>
+              <p><span>08</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>09 <span>0000000000</span><span>00000</span></p>
+              <p><span>09</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>10 <span>0000000000</span><span>00000</span></p>
+              <p><span>10</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>11 <span>0000000000</span><span>00000</span></p>
+              <p><span>11</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>12 <span>0000000000</span><span>00000</span></p>
+              <p><span>12</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>13 <span>0000000000</span><span>00000</span></p>
+              <p><span>13</span> <span>0000000000</span><span>00000</span></p>
             </div>
             <div className="winner">
-              <p>14 <span>0000000000</span><span>00000</span></p>
+              <p><span>14</span> <span>0000000000</span><span>00000</span></p>
             </div>
+            <div className="winner">
+              <p><span>15</span> <span>0000000000</span><span>00000</span></p>
+            </div>
+            <div className="winner">
+              <p><span>16</span> <span>0000000000</span><span>00000</span></p>
+            </div>
+            <div className="winner">
+              <p><span>17</span> <span>0000000000</span><span>00000</span></p>
+            </div>
+            <div className="winner">
+              <p><span>18</span> <span>0000000000</span><span>00000</span></p>
+            </div>
+
           </div>
         </div>
       </div>

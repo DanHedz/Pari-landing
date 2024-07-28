@@ -16,7 +16,8 @@ const Faq = () => {
         <h1>FAQ</h1>
         <p>All Your Questions <br /> Answered!</p>
       </div>
-      <div className="questiones">
+      <div className="questiones-container">
+                <div className="questiones ">
         <div className="question" onClick={() => toggleQuestion(2)}>
           <p>01 <span>How long does the Royal Khazana Tournament last?</span>
             <div>
@@ -92,7 +93,7 @@ const Faq = () => {
       </div>
       <div className="questiones">
         <div className="question" onClick={() => toggleQuestion(7)}>
-          <p>06 <span>How can I win a motorcycle?</span>
+          <p>06 <span>How can I win <br/> a motorcycle?</span>
             <div>
               <img src={activeQuestion === 7 ? arrow_up : arrow_down} alt="Toggle arrow" />
             </div>
@@ -120,6 +121,8 @@ const Faq = () => {
         </div>
 
       </div>
+      </div>
+
     </div>
   );
 };
