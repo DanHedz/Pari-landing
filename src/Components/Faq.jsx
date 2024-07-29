@@ -75,6 +75,50 @@ const Faq = () => {
             </div>
           </div>
         </div>
+        <div className="questiones-container-2">
+        <div className="questiones">
+            <div className="question" onClick={() => toggleQuestion(5)}>
+              <p>04<span>How can I participate in the Tournament?</span>
+                <div>
+                  <img src={activeQuestion === 5 ? arrow_up : arrow_down} alt="Toggle arrow" />
+                </div>
+              </p>
+              {activeQuestion === 5 && (
+                <div className="answer">
+                  <p>Place a promotional bet of ₹750 on Cricket World Cup 2024, these bets can be single (Single bet) or combined (Parlay), live or pre-match, on Cricket World Cup 2024 with odds of at least 1.75 in a single bet and 1.5 in each parlay bet. Promotional bet points are summed up to determine a player's total points and position in the Rating Leaderboard. You can find out in more detail how points are calculated for each promotional rate in the T&C.</p>
+                </div>
+              )}
+            </div>
+          </div> 
+          <div className="questiones">
+            <div className="question" onClick={() => toggleQuestion(6)}>
+              <p>04<span>How can I participate in the Tournament?</span>
+                <div>
+                  <img src={activeQuestion === 6 ? arrow_up : arrow_down} alt="Toggle arrow" />
+                </div>
+              </p>
+              {activeQuestion === 6 && (
+                <div className="answer">
+                  <p>Place a promotional bet of ₹750 on Cricket World Cup 2024, these bets can be single (Single bet) or combined (Parlay), live or pre-match, on Cricket World Cup 2024 with odds of at least 1.75 in a single bet and 1.5 in each parlay bet. Promotional bet points are summed up to determine a player's total points and position in the Rating Leaderboard. You can find out in more detail how points are calculated for each promotional rate in the T&C.</p>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="questiones">
+            <div className="question" onClick={() => toggleQuestion(7)}>
+              <p>04<span>How can I participate in the Tournament?</span>
+                <div>
+                  <img src={activeQuestion === 7 ? arrow_up : arrow_down} alt="Toggle arrow" />
+                </div>
+              </p>
+              {activeQuestion === 7 && (
+                <div className="answer">
+                  <p>Place a promotional bet of ₹750 on Cricket World Cup 2024, these bets can be single (Single bet) or combined (Parlay), live or pre-match, on Cricket World Cup 2024 with odds of at least 1.75 in a single bet and 1.5 in each parlay bet. Promotional bet points are summed up to determine a player's total points and position in the Rating Leaderboard. You can find out in more detail how points are calculated for each promotional rate in the T&C.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
 
       
 
