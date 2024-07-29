@@ -9,6 +9,7 @@ $border-radius: 6px
 $container-max-width: 320px
 $font-size-base: 16px
 $layout-breakpoint-big: 1024px
+
 // Mixins
 =flex-center
   display: flex
@@ -22,7 +23,6 @@ $layout-breakpoint-big: 1024px
   color: $color
   text-transform: $transform
 
-
 .faq
   background: url('../assets/bg_05.svg') no-repeat center center / cover
   background-position: center
@@ -31,9 +31,7 @@ $layout-breakpoint-big: 1024px
   height: 835px
   width: 100%
   background-color: #0E0447
-
   font-family: $font-primary
-
 
 .faq-questiones
   padding: 20px
@@ -49,8 +47,7 @@ $layout-breakpoint-big: 1024px
     +text-styles($font-secondary, 700, 20px, $text-color, uppercase)
     line-height: 22px
     margin: 0
-
-
+.questiones-1,
 .questiones
   +flex-center
   width: 300px
@@ -62,7 +59,6 @@ $layout-breakpoint-big: 1024px
   border: 1px solid $primary-color
   padding: 20px 30px
 
-
   .question
     width: 100%
     display: flex
@@ -70,7 +66,6 @@ $layout-breakpoint-big: 1024px
     align-items: flex-start
     cursor: pointer
     text-align: left
-
 
     p
       display: flex
@@ -98,16 +93,16 @@ $layout-breakpoint-big: 1024px
     font-size: 10px
     color: $secondary-text-color
     text-align: left
+
     p
       text-align: left
       letter-spacing: -0.02em
       margin: 0
 
-
 @media (min-width: $layout-breakpoint-big)
   .faq
     background: url('../assets/bg_desktop_05.svg') no-repeat center center / cover
-  
+
   .faq-questiones
     padding: 20px
 
@@ -121,23 +116,24 @@ $layout-breakpoint-big: 1024px
     p
       line-height: 22px
       margin: 20px 0
+
       br
         display: none
 
-  .questiones-container
-    max-width: 800px
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-wrap: wrap
-    margin: auto
-    gap: 5px
-
-  .questiones
-    display: flex
-     flex-basis: 50%
-      box-sizing: border-box
+  .questiones_2_container
+      
+      display: flex
+      justify-content: center
+      align-items: center
+      max-width: 800px
+      margin: auto
+      width: 100%
 
 
+  .questiones-container,
+  .questiones-container-2
+    flex: 1 
+    margin: 0 10px  
 
-
+  .questiones-container-2
+      margin-bottom: 80px
